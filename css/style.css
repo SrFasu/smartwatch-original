@@ -415,132 +415,195 @@ p{
 }
 
 
+/* -------------------------- Responsive ------------------------------ */
+
 /* tabletas de diez pulgadas */
 @media(max-width:1024px) {
 
-.crono{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-}
-
-.container {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-}
-
-.contacto{
-    position: absolute;
-    top: 15%;
-    left: 20%;
-}
-
-.contacto__enviar{
-    border-color: rgba(49, 150, 150);
-    color: rgba(49, 150, 150);
-}
-
-        /* Footer */
-    .redes__facebook .i{
-        color:#1877F2;
-    }
-    
-    .redes__instagram .i{
-        color:#E1306C;
-    }
-    
-    .redes__linkedin .i{
-        color:#0A66C2;
-    }
-    
-    .redes__github .i{
-        color:#6cc644;
-    }
-}
-
-@media(max-width:768px){
     .crono{
         position: absolute;
-        left: 21%;
+        top: 30%;
+        left: 30%;
     }
-
-    .container{
+    
+    .container {
         position: absolute;
-        left: 1%;
-    }
-
-    .contacto{
-        position: absolute;
-        left: 12%;
-        width: 580px;
-    }
-
-}
-
-/* tabletas */
-@media(max-width:600px){
-    body{
-        background-image: url(/img/montaña-celu.jpg) ;
-    }
-
-    .crono{
-        position: absolute;
+        top: 25%;
         left: 15%;
+        
     }
-
-    .container{
-        position: absolute;
-        left: -8%;
-    }
-
+    
     .contacto{
         position: absolute;
-        left: 10%;
-        width: 480px;
+        top: 15%;
+        left: 20%;
     }
-}
+    
+    .contacto__enviar{
+        border-color: rgba(49, 150, 150);
+        color: rgba(49, 150, 150);
+    }
+    
+            /* Footer */
+        .redes__facebook .i{
+            color:#1877F2;
+        }
+        
+        .redes__instagram .i{
+            color:#E1306C;
+        }
+        
+        .redes__linkedin .i{
+            color:#0A66C2;
+        }
+        
+        .redes__github .i{
+            color:#6cc644;
+        }
+    }
+    
+    @media(max-width:768px){
+        .crono{
+            position: absolute;
+            left: 21%;
+        }
+    
+        .container{
+            position: absolute;
+            left: 1%;
+        }
+    
+        .contacto{
+            position: absolute;
+            left: 12%;
+            width: 580px;
+        }
+    
+    }
+    
+    /* tabletas */
+    @media(max-width:600px){
+        body{
+            background-image: url(fondo2.jpg) ;
+        }
+    
+        .crono{
+            position: absolute;
+            left: 15%;
+        }
+    
+        .container{
+            position: absolute;
+            left: 0%;
+            width: 580px;
+        }
+    
+        .contacto{
+            position: absolute;
+            left: 10%;
+            width: 480px;
+        }
+    }
+    
+    /* Celulares */
+    @media(max-width:480px){
+        body{
+            background-image: url(fondo2.jpg) ;
+        }
+    
+        .reloj__tiempo{
+            letter-spacing: 0.05em;
+            font-size: 5rem;
+            padding: 5px 0;
+        }
+        .reloj__fecha{
+            letter-spacing: 0.1em;
+            font-size: 2rem;
+        }
+    
+        .crono{
+            position: absolute;
+            left: 8%;
+        }
+    
+        .crono__tiempo{
+            font-size: 5rem;
+        }
+    
+        .container{
+            position: absolute;
+            left: 0%;
+            width: 480px;
+        }
+    
+        .tempo__btn{
+            width: 80px;
+            font-size: 1.1rem;
+        }
+    
+        .contacto{
+            position: absolute;
+            left: 10%;
+            width: 380px;
+        }
+    }
 
-/* Celulares */
-@media(max-width:480px){
-    body{
-        background-image: url(/img/montaña-celu.jpg) ;
-    }
+    @media(max-width:380px){
+        body{
+            background-image: url(fondo2.jpg) ;
+        }
+    
+        .reloj__tiempo{
+            letter-spacing: 0.05em;
+            font-size: 4rem;
+            padding: 4px 0;
+        }
 
-    .reloj__tiempo{
-        letter-spacing: 0.05em;
-        font-size: 5rem;
-        padding: 5px 0;
-    }
-    .reloj__fecha{
-        letter-spacing: 0.1em;
-        font-size: 2rem;
-    }
+        nav{
+            font-size: 1rem;
+        }
 
-    .crono{
-        position: absolute;
-        left: 8%;
-    }
+        .reloj__fecha{
+            letter-spacing: 0.1em;
+            font-size: 1.8rem;
+        }
+    
+        .crono{
+            position: absolute;
+            left: 0%;
+        }
+    
+        .crono__tiempo{
+            font-size: 3rem;
+        }
+        
+        .crono__controles button{
+            font-size: 1rem;
+        }
 
-    .crono__tiempo{
-        font-size: 5rem;
-    }
+        .container{
+            position: absolute;
+            left: -1%;
+            width: 360px;
+        }
 
-    .container{
-        position: absolute;
-        left: 0%;
-        width: 480px;
-    }
+        .tempo__label{
+            font-size: 1.9rem;
+        }
+    
+        .tempo__tiempo{
+            font-family: 'Share Tech Mono', monospace;
+            width: 50px;
+        }
 
-    .tempo__btn{
-        width: 80px;
-        font-size: 1.1rem;
+        .tempo__btn{
+            width: 70px;
+            font-size: 1.1rem;
+        }
+    
+        .contacto{
+            position: absolute;
+            left: 5%;
+            width: 330px;
+        }
     }
-
-    .contacto{
-        position: absolute;
-        left: 10%;
-        width: 380px;
-    }
-}
-
