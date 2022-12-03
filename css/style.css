@@ -513,48 +513,6 @@ p{
     
         .reloj__tiempo{
             letter-spacing: 0.05em;
-            font-size: 5rem;
-            padding: 5px 0;
-        }
-        .reloj__fecha{
-            letter-spacing: 0.1em;
-            font-size: 2rem;
-        }
-    
-        .crono{
-            position: absolute;
-            left: 8%;
-        }
-    
-        .crono__tiempo{
-            font-size: 5rem;
-        }
-    
-        .container{
-            position: absolute;
-            left: 0%;
-            width: 480px;
-        }
-    
-        .tempo__btn{
-            width: 80px;
-            font-size: 1.1rem;
-        }
-    
-        .contacto{
-            position: absolute;
-            left: 10%;
-            width: 380px;
-        }
-    }
-
-    @media(max-width:380px){
-        body{
-            background-image: url(fondo2.jpg) ;
-        }
-    
-        .reloj__tiempo{
-            letter-spacing: 0.05em;
             font-size: 4rem;
             padding: 4px 0;
         }
