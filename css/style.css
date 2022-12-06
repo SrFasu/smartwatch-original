@@ -8,8 +8,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    background-image: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
-    /* background-image: url(/img/fondo.jpg); */
+    /* background-image: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg); */
+    background-image: url(../img/fondo.jpg); 
     background-size: 100vw 100vh;
 	background-repeat: no-repeat;
     position: relative;
@@ -329,6 +329,24 @@ p{
     font-size: .95rem;
 }
 
+.contacto__enviado{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    backdrop-filter: blur(.9px);
+    width: 500px;
+    padding: 30px; 
+}
+
+.contacto__enviado p{
+    color: #fff;
+    font-weight: bold; 
+    font-size: 2rem;
+}
+
 /* -------------------------- Footer ------------------------------ */
 
 .footer{
@@ -443,6 +461,10 @@ p{
         border-color: rgba(49, 150, 150);
         color: rgba(49, 150, 150);
     }
+
+    .contacto__enviado{
+        left: 25%;
+    }
     
             /* Footer */
         .redes__facebook .i{
@@ -478,13 +500,17 @@ p{
             left: 12%;
             width: 580px;
         }
+
+        .contacto__enviado{
+            left: 15%;
+        }
     
     }
     
     /* tabletas */
     @media(max-width:600px){
         body{
-            background-image: url(fondo2.jpg) ;
+            background-image: url(../img/fondo2.jpg) ;
         }
     
         .crono{
@@ -503,12 +529,16 @@ p{
             left: 10%;
             width: 480px;
         }
+
+        .contacto__enviado{
+            left: 8%;
+        }
     }
     
     /* Celulares */
     @media(max-width:480px){
         body{
-            background-image: url(fondo2.jpg) ;
+            background-image: url(../img/fondo2.jpg) ;
         }
     
         .reloj__tiempo{
@@ -563,5 +593,11 @@ p{
             position: absolute;
             left: 5%;
             width: 330px;
+        }
+
+        .contacto__enviado{
+            width: 300px;
+            font-size: 1rem;
+            left: 15%;
         }
     }
